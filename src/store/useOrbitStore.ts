@@ -12,15 +12,6 @@ import type {
   WishlistItem,
 } from '../types'
 import { addDays, toIsoDate } from '../utils/date'
-import {
-  seedExpenses,
-  seedGoals,
-  seedHabits,
-  seedPersonalCare,
-  seedRenewals,
-  seedSubscriptions,
-  seedWishlist,
-} from '../utils/seedData'
 
 type DeletedEntityType =
   | 'personalCare'
@@ -79,13 +70,13 @@ export const useOrbitStore = create<OrbitState>()(
   persist(
     // Architecture: one persisted store powers all trackers and utility actions.
     (set, get) => ({
-      personalCare: seedPersonalCare,
-      subscriptions: seedSubscriptions,
-      expenses: seedExpenses,
-      goals: seedGoals,
-      habits: seedHabits,
-      wishlist: seedWishlist,
-      renewals: seedRenewals,
+      personalCare: [],
+      subscriptions: [],
+      expenses: [],
+      goals: [],
+      habits: [],
+      wishlist: [],
+      renewals: [],
       theme: 'dark',
       searchQuery: '',
       setTheme: (theme) => set({ theme }),
