@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --radius: 18px;
+  --bg: #f2ede4;
+  --surface: #fbf7f2;
+  --surface-2: #f1eadf;
+  --surface-3: #e7dfd3;
+  --text: #22201e;
+  --text-muted: #6f655a;
+  --border: #e2d8ca;
+  --ring: #9a8974;
+  --accent: #7c6a58;
+  --accent-foreground: #fbf7f2;
+  --shadow-soft: 0 10px 30px rgba(41, 31, 18, 0.08);
+}
+
+[data-theme='dark'] {
+  --bg: #131313;
+  --surface: #1b1b1b;
+  --surface-2: #232323;
+  --surface-3: #2d2d2d;
+  --text: #f2eee8;
+  --text-muted: #b8ada1;
+  --border: #2d2a27;
+  --ring: #9a8d80;
+  --accent: #8a7a68;
+  --accent-foreground: #f8f4ef;
+  --shadow-soft: 0 14px 34px rgba(0, 0, 0, 0.32);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  background: var(--bg);
+  color: var(--text);
+}

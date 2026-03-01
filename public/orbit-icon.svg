@@ -1,0 +1,20 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="72" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9B8A77"/>
+      <stop offset="1" stop-color="#6F5E4C"/>
+    </linearGradient>
+    <linearGradient id="orb" x1="150" y1="140" x2="350" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5EFE6"/>
+      <stop offset="1" stop-color="#D9CFC2"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="32" y="32" width="448" height="448" rx="112" fill="url(#bg)"/>
+
+  <circle cx="256" cy="256" r="78" fill="url(#orb)"/>
+  <ellipse cx="256" cy="256" rx="150" ry="68" stroke="#EEE6DB" stroke-width="20"/>
+  <ellipse cx="256" cy="256" rx="112" ry="150" transform="rotate(-26 256 256)" stroke="#E8DDD0" stroke-opacity="0.9" stroke-width="14"/>
+
+  <circle cx="372" cy="222" r="18" fill="#F5EFE6"/>
+</svg>
